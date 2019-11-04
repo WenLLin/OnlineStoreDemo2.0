@@ -33,12 +33,12 @@
     <header>
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
 
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clothing</a>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics</a>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Health & Personal Care</a>
-                <a href="#">Clearance</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Clothing</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Electronics</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Health & Personal Care</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Clearance</a>
                 <form class="navbar-form d-flex navbar-right" action="/action_page.php">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Find cheap stuff">

@@ -62,3 +62,4 @@ C:\Users\kensk\OneDrive\Desktop\MSSA\Projects\OnlineStoreDemo2\OnlineStoreDemo2\
 C:\Users\kensk\OneDrive\Desktop\MSSA\Projects\OnlineStoreDemo2\OnlineStoreDemo2\CourseProjectDemo2\obj\Debug\netcoreapp2.2\CourseProjectDemo2.dll
 C:\Users\kensk\OneDrive\Desktop\MSSA\Projects\OnlineStoreDemo2\OnlineStoreDemo2\CourseProjectDemo2\obj\Debug\netcoreapp2.2\CourseProjectDemo2.pdb
 C:\Users\kensk\OneDrive\Desktop\MSSA\Projects\OnlineStoreDemo2\OnlineStoreDemo2\CourseProjectDemo2\obj\Debug\netcoreapp2.2\CourseProjectDemo2.csproj.CopyComplete
+C:\Users\kensk\OneDrive\Desktop\MSSA\Projects\OnlineStoreDemo2\OnlineStoreDemo2\CourseProjectDemo2\obj\Debug\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
