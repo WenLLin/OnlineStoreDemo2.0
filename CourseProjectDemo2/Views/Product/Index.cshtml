@@ -10,49 +10,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <main>
-        <div class="container py-5 bg-light">
+<body style="background-color:antiquewhite">
+    <header>
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
 
+                <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Clothing</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Electronics</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Health & Personal Care</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Clearance</a>
+                <form class="navbar-form d-flex navbar-right" action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Find cheap stuff">
+                        <div class="input-group-btn">
+                            <a class="text-muted" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5" /><path d="M21 21l-5.2-5.2" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container py-5">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="T-shirt"><title>T-Shirt</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                        <img class="card-img-top" height="225" src="~/img/Tshirt.jpg" alt="T-Shirt" title="Saint Patrick's Day T-shirt"><rect width="100%" height="100%" fill="#55595c" />
                         <div class="card-body">
+                            <p>Saint Patrick's Day T-shirt</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                        View
+                                    </button>
+
+                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Saint Patrick's Day T-shirt</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <img src="~/img/Tshirt.jpg" class="img-fluid img-thumbnail" />
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 text-black-50">List Price:</div>
+                                                            <div class="col-md-3 text-black-50"><del>$59.99</del></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-5">POCS Deal Price:</div>
+                                                            <div class="col-md-3">$59.97</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 text-info">Shipping:</div>
+                                                            <div class="col-md-3 text-info">$3.99</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h1>Description</h1>
+                                                            <p>
+                                                                - 100% Pre-Shrunk Cotton<br />
+                                                                - Unisex fit<br />
+                                                                - SUPERIOR DESIGN: POCS branded tees are designed and printed in the USA by MSSA Veterans
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-info">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Shorts"><title>Shorts</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                        <img class="card-img-top" height="225" src="~/img/Shorts.jpg" title="The one and only shorts"><rect width="100%" height="100%" fill="#55595c" />
                         <div class="card-body">
+                            <p>POCS Shorts</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#shorts">
+                                    View
+                                </button>
+                                <div class="modal fade" id="shorts" tabindex="-1" role="dialog" aria-labelledby="shortsTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="shortsTitle">POCS Shorts</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <img src="~/img/Shorts.jpg" class="img-fluid img-thumbnail" />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-black-50">List Price:</div>
+                                                        <div class="col-md-3 text-black-50"><del>$79.99</del></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5">POCS Deal Price:</div>
+                                                        <div class="col-md-3">$10.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-info">Shipping:</div>
+                                                        <div class="col-md-3 text-info">$3.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h1>Description</h1>
+                                                        <p>
+                                                            - 100% Textured Nylon Poplin<br />
+                                                            - UPF 50 Sun Protection<br />
+                                                            - Elastic closure<br />
+                                                            - QUICK-DRYING: The POCS men’s shorts include a quick-drying feature that prevents them from retaining water
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-info">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Monitor"><title>Monitor</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                        <img class="card-img-top" height="225" src="~/img/Monitor.jpg" title="Monitor"><rect width="100%" height="100%" fill="#55595c" />
                         <div class="card-body">
-                           <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-
+                            <p>POCS Monitor</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#monitor">
+                                    View
+                                </button>
+                                <div class="modal fade" id="monitor" tabindex="-1" role="dialog" aria-labelledby="monitorTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="monitorTitle">POCS Monitor</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <img src="~/img/Monitor.jpg" class="img-fluid img-thumbnail" />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-black-50">List Price:</div>
+                                                        <div class="col-md-3 text-black-50"><del>$159.99</del></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5">POCS Deal Price:</div>
+                                                        <div class="col-md-3">$15.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-info">Shipping:</div>
+                                                        <div class="col-md-3 text-info">$3.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h1>Description</h1>
+                                                        <p>
+                                                            - 27" Full HD (1920 x 1080) widescreen IPS display with AMD Radeon free Sync technology<br />
+                                                            - Response time: 1ms VRB<br />
+                                                            - Refresh Rate: 75Hz - Using Display port or HDMI port<br />
+                                                            - Zero frame Design | ergo stand: ergonomically-designed stand | VESA mounting compliant (100mm x 100mm)<br />
+                                                            - Ports: 1 x Display Port, 1 x HDMI, 1 x VGA, 1 x audio-in & 1 x audio-out (VGA & audio cable included)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-info">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
                             </div>
                         </div>
                     </div>
@@ -60,48 +216,183 @@
 
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Mouse"><title>Mouse</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                        <img class="card-img-top" height="225" src="~/img/mouse.jpg" title="Bionic Mouse"><rect width="100%" height="100%" fill="#55595c" />
                         <div class="card-body">
+                            <p>POCS Bionic Mouse</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mouse">
+                                    View
+                                </button>
+                                <div class="modal fade" id="mouse" tabindex="-1" role="dialog" aria-labelledby="mouseTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="mouseTitle">POCS Bionic Mouse</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <img src="~/img/mouse.jpg" class="img-fluid mx-auto d-block img-thumbnail" />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-black-50">List Price:</div>
+                                                        <div class="col-md-3 text-black-50"><del>$69.99</del></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5">POCS Deal Price:</div>
+                                                        <div class="col-md-3">$5.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-info">Shipping:</div>
+                                                        <div class="col-md-3 text-info">$3.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h1>Description</h1>
+                                                        <p>
+                                                            - Bionic Design: Shaped and touch like a real mouse<br />
+                                                            - Plug-and-Play Simplicity: No software, no hassles—you simply plug in the USB and start using your mouse right away.<br />
+                                                            - High Precision: 1000/2000 DPI, high precision optical mouse, super responsive: scroll wheel to speed through long documents or web pages.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-info">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Organic Banana"><title>Organic Banana</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                        <img class="card-img-top" title="Organic Bananas" height="225" src="https://cdn3.volusion.com/kalng.kxgpu/v/vspfiles/photos/FSSA60008-2.jpg"><rect width="100%" height="100%" fill="#55595c" />
                         <div class="card-body">
+                            <p>Non-POCS Organic Bananas</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bananas">
+                                    View
+                                </button>
+                                <div class="modal fade" id="bananas" tabindex="-1" role="dialog" aria-labelledby="bananasTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="bananasTitle">Non-POCS Organic Bananas</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <img src="~/img/Bananas.jpg" class="img-fluid mx-auto d-block img-thumbnail " />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-black-50">List Price:</div>
+                                                        <div class="col-md-3 text-black-50"><del>$8.99</del></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5">POCS Deal Price:</div>
+                                                        <div class="col-md-3">$2.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-info">Shipping:</div>
+                                                        <div class="col-md-3 text-info">$3.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h1>Description</h1>
+                                                        <p>
+                                                            Enjoy a serving of fresh healthy organic fruits with Non-POCS Organic Bananas.
+                                                            Bananas are known to contain a high amount of vitamin B6 and moderate amounts of 
+                                                            other vitamins and minerals. Have them at breakfast, or anytime you want a snack. 
+                                                            Slice them and add them to fruit salads, ice-cream, yogurt, milkshakes, or serve 
+                                                            with cereal, pancakes and waffles. You can also use them as a topping for cheesecakes 
+                                                            or for use in other dessert recipes.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-info">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Organic Salt"><title>Organic Salt</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                        <img class="card-img-top" title="Organic Salt" height="225" src="https://img.m2all.com/media/catalog/product/cache/1/small_image/260x/9df78eab33525d08d6e5fb8d27136e95/r/o/rock-salt.png"><rect width="100%" height="100%" fill="#55595c" />
                         <div class="card-body">
+                            <p>Non-POCS Organic Salt</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#salt">
+                                    View
+                                </button>
+                                <div class="modal fade" id="salt" tabindex="-1" role="dialog" aria-labelledby="saltTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="saltTitle">Non-POCS Organic Salt</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <img src="~/img/Salt.jpg" class="img-fluid mx-auto d-block img-thumbnail" />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-black-50">List Price:</div>
+                                                        <div class="col-md-3 text-black-50"><del>$29.99</del></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5">POCS Deal Price:</div>
+                                                        <div class="col-md-3">$5.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-info">Shipping:</div>
+                                                        <div class="col-md-3 text-info">$3.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h1>Description</h1>
+                                                        <p>
+                                                            - 100% Organic<br />                                                          
+                                                            - FLAVOR – Real Salt is unlike any salt on earth <br />
+                                                            - HEALTHY – Recommended by doctors! An ancient sea salt recommended by doctors and health professionals for its unique blend of trace minerals<br />
+                                                            - MINED IN USA – Mined in Utah since 1958 from an ancient seabed protected from modern pollution
+                                                            - Net Weight: 1 LB
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-info">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </main>
+    <button class="float-right"><a href="#">Back to top</a></button>
 </body>
 </html>
