@@ -61,16 +61,20 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active" >
-                <a asp-area="" asp-controller="Product" asp-action="Index">                   
-                    <img src="~/img/ThanksGiving.jpg"  class="rounded mx-auto d-block w-100" alt="ThanksgivingSale" />
+            <div class="carousel-item active  text-center">
+                <a asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/img/ThanksGiving.jpg" class="w-100  text-center" style="height:550px" alt="ThanksgivingSale" />
                 </a>
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <a asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/img/chrimx.png" class="d-block w-100" style="height:550px" alt="Chrismax" />
+                    </a>
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <a asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/img/NewYear.jpg" class="d-block w-100" style="height:550px" alt="newyear">
+                    </a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -82,6 +86,191 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <br />
+        <h1 style="background-color:chocolate">Best Sellers</h1>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" height="225" src="~/img/Tshirt.jpg" alt="T-Shirt" title="Saint Patrick's Day T-shirt"><rect width="100%" height="100%" fill="#55595c" />
+                        <div class="card-body">
+                            <p>Saint Patrick's Day T-shirt</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                        View
+                                    </button>
+                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Saint Patrick's Day T-shirt</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <img src="~/img/Tshirt.jpg" class="img-fluid img-thumbnail" />
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 text-black-50">List Price:</div>
+                                                            <div class="col-md-3 text-black-50"><del>$59.99</del></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-5">POCS Deal Price:</div>
+                                                            <div class="col-md-3">$59.97</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 text-info">Shipping:</div>
+                                                            <div class="col-md-3 text-info">$3.99</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h1>Description</h1>
+                                                            <p>
+                                                                - 100% Pre-Shrunk Cotton<br />
+                                                                - Unisex fit<br />
+                                                                - SUPERIOR DESIGN: POCS branded tees are designed and printed in the USA by MSSA Veterans
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-info">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" height="225" src="~/img/Shorts.jpg" title="The one and only shorts"><rect width="100%" height="100%" fill="#55595c" />
+                        <div class="card-body">
+                            <p>POCS Shorts</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#shorts">
+                                    View
+                                </button>
+                                <div class="modal fade" id="shorts" tabindex="-1" role="dialog" aria-labelledby="shortsTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="shortsTitle">POCS Shorts</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <img src="~/img/Shorts.jpg" class="img-fluid img-thumbnail" />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-black-50">List Price:</div>
+                                                        <div class="col-md-3 text-black-50"><del>$79.99</del></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5">POCS Deal Price:</div>
+                                                        <div class="col-md-3">$10.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-info">Shipping:</div>
+                                                        <div class="col-md-3 text-info">$3.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h1>Description</h1>
+                                                        <p>
+                                                            - 100% Textured Nylon Poplin<br />
+                                                            - UPF 50 Sun Protection<br />
+                                                            - Elastic closure<br />
+                                                            - QUICK-DRYING: The POCS men’s shorts include a quick-drying feature that prevents them from retaining water
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-info">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" height="225" src="~/img/mouse.jpg" title="Bionic Mouse"><rect width="100%" height="100%" fill="#55595c" />
+                        <div class="card-body">
+                            <p>POCS Bionic Mouse</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mouse">
+                                    View
+                                </button>
+                                <div class="modal fade" id="mouse" tabindex="-1" role="dialog" aria-labelledby="mouseTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="mouseTitle">POCS Bionic Mouse</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <img src="~/img/mouse.jpg" class="img-fluid mx-auto d-block img-thumbnail" />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-black-50">List Price:</div>
+                                                        <div class="col-md-3 text-black-50"><del>$69.99</del></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5">POCS Deal Price:</div>
+                                                        <div class="col-md-3">$5.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-info">Shipping:</div>
+                                                        <div class="col-md-3 text-info">$3.99</div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h1>Description</h1>
+                                                        <p>
+                                                            - Bionic Design: Shaped and touch like a real mouse<br />
+                                                            - Plug-and-Play Simplicity: No software, no hassles—you simply plug in the USB and start using your mouse right away.<br />
+                                                            - High Precision: 1000/2000 DPI, high precision optical mouse, super responsive: scroll wheel to speed through long documents or web pages.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-info">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    
     <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
             <h1 class="display-4 font-italic">About Us: Pelt Of Cheap Stuff</h1>
