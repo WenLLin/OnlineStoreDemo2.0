@@ -15,22 +15,23 @@
 
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="carousel.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
 </head>
 <body style="background-color:antiquewhite">
-    <header>
+    <div class="header">
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -52,16 +53,18 @@
                 </form>
             </nav>
         </div>
-    </header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide h-50" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="~/img/ThanksGiving.jpg" class="d-block w-90" alt="ThanksgivingSale" />
+            <div class="carousel-item active" >
+                <a asp-area="" asp-controller="Product" asp-action="Index">                   
+                    <img src="~/img/ThanksGiving.jpg"  class="rounded mx-auto d-block w-100" alt="ThanksgivingSale" />
+                </a>
             </div>
             <div class="carousel-item">
                 <img src="..." class="d-block w-100" alt="...">
