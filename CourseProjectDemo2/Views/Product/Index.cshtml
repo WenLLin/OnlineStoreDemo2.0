@@ -10,23 +10,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="background-color: antiquewhite; background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/73694517_2720900334622886_400898376326971392_n.jpg?_nc_cat=102&_nc_oc=AQn8j-3q8ohZRdAVpCPu9iTttSYTCGiW2E3f6Tj6eOGKP4x1pMGjYTM86vIvCJwxPoQ&_nc_ht=scontent-iad3-1.xx&oh=20a76c713486d4e2f8a7e3c128305973&oe=5E5F2A37'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <header>
+<body style="background-color:aliceblue; ">
+      <header>
         <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between" style="background-color:cornflowerblue">
-                <a class="nav-link text-warning" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-
-                <a class="nav-link text-warning" asp-area="" asp-controller="Product" asp-action="Index">Clothing</a>
-                <a class="nav-link text-warning" asp-area="" asp-controller="Product" asp-action="Index">Electronics</a>
-                <a class="nav-link text-warning" asp-area="" asp-controller="Product" asp-action="Index">Health & Personal Care</a>
-                <a class="nav-link text-warning" asp-area="" asp-controller="Product" asp-action="Index">Clearance</a>
+            <nav class="nav d-flex justify-content-between py-1" style="background-color:azure">
+                <a class="nav-link text-secondary" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="nav-link text-secondary" asp-area="" asp-controller="Product" asp-action="Index">Clothing</a>
+                <a class="nav-link text-secondary" asp-area="" asp-controller="Product" asp-action="Index">Electronics</a>
+                <a class="nav-link text-secondary" asp-area="" asp-controller="Product" asp-action="Index">Health & Personal Care</a>
+                <a class="nav-link text-secondary" asp-area="" asp-controller="Product" asp-action="Index">Clearance</a>
                 <form class="navbar-form d-flex navbar-right" action="/action_page.php">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Find cheap stuff">
-                        <div class="input-group-btn">
-                            <a class="text-muted" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5" /><path d="M21 21l-5.2-5.2" /></svg>
-                            </a>
+                        <div class="input-group-btn pr-2">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" asp-controller="Product" asp-action="Index">Search</button>
                         </div>
                     </div>
                 </form>
@@ -149,7 +146,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-info">Add to cart</button>
+                                <button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target="#exampleModal">
+                                    Add to Cart
+                                </button>
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            
+                                            <div class="modal-body">
+                                                Added to the cart
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -393,6 +407,6 @@
             </div>
         </div>
     </main>
-    <button class="float-right"><a href="#">Back to top</a></button>
+        <button class="fixed-bottom"><a href="#">Back to top</a></button>
 </body>
 </html>

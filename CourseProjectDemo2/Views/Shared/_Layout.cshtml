@@ -13,30 +13,29 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="background-color: antiquewhite; background-image: url('https://img.freepik.com/free-vector/hand-drawn-abstract-floral-background_23-2148264494.jpg?size=626&ext=jpg');">
+            <a class="navbar-brand blog-header-logo pl-5" asp-area="" asp-controller="Home" asp-action="Index"><h1><strong>POCS</strong></h1></a>
+            <div class="container">
+                
 
-            
-            
-                <div class="container">
-                    <a class="navbar-brand blog-header-logo" asp-area="" asp-controller="Home" asp-action="Index">POCS</a>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="col-11 d-flex justify-content-end align-items-center">
-                        <partial name="_LoginPartial" />
-                        <a href="#" class="btn btn-info btn-lg " style="height: 50px;">
-                            <span class="glyphicon glyphicon-shopping-cart" style="width: 14px;"></span> Shopping Cart
-                        </a>
-                    </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-11 d-flex justify-content-end align-items-center">
+                    <partial name="_LoginPartial" />
+                    <a class="btn btn-info btn-lg " style="height: 50px;" asp-area="" asp-controller="Cart" asp-action="Index">
+                        <span class="glyphicon glyphicon-shopping-cart" style="width: 14px;"></span> Shopping Cart
+                    </a>
                 </div>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -46,7 +45,7 @@
         </main>
     </div>
 
-    
+
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -69,5 +68,34 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
+<footer>
+   
+        <div class="container">
+            <div class="text-right">
+                <div class="py-2">
+                    &copy; 2019 - POCS -<a class="col-2 " asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                    <a class="col-2 "  asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+                <div class="py-2">
+                    <a class="text-dark " style="font-size: 20px;">Share us on:</a>
+                    <a href="#" class="fa fa-facebook " style="width: 25px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-twitter " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-instagram " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-youtube " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-reddit-alien " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-pinterest " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-linkedin " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-google " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-vk " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-stack-overflow " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-github " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-dribbble " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-comment " style="width: 30px; font-size: 25px;"></a>
+                    <a href="#" class="fa fa-envelope " style="width: 30px; font-size: 25px;"></a>
+                    </div>
+                </div>
+            </div>
+</footer>
 </body>
 </html>
